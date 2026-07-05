@@ -1,0 +1,17 @@
+.about-story {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.about-story p {
+  font-size: calc(0.92rem * var(--font-scale));
+  color: var(--text-mid);
+  line-height: 1.75;
+}
+
+.value-card { text-align: left; }
+.value-icon { font-size: 1.5rem; display: block; margin-bottom: 0.75rem; }
+.value-card h3 { font-size: calc(1rem * var(--font-scale)); margin-bottom: 0.4rem; }
+.value-card p { font-size: calc(0.85rem * var(--font-scale)); color: var(--text-low); line-height: 1.55; }

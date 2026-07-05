@@ -1,0 +1,25 @@
+.api-form {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.6rem;
+  border-radius: 999px;
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+.api-form input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-high);
+  padding: 0.65rem 1rem;
+}
+.api-form input::placeholder { color: var(--text-low); }
+.api-form button { border-radius: 999px; padding: 0.65rem 1.4rem; }
+
+.api-error {
+  color: #ff6b6b;
+  margin-bottom: 1.5rem;
+  font-size: calc(0.85rem * var(--font-scale));
+}
+.api-hint { color: var(--text-low); font-size: calc(0.88rem * var(--font-scale)); }

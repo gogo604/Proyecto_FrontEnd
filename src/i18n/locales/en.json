@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "community": "Community",
+    "library": "Library",
+    "events": "Events",
+    "gallery": "Gallery",
+    "map": "Map",
+    "api": "API",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "eyebrow": "The academic future starts here",
+    "title1": "Your whole campus,",
+    "title2": "in one universe.",
+    "subtitle": "Rumabi Study connects notes, study groups, events and schedules in one smart platform built for university students.",
+    "searchPlaceholder": "What do you want to organize today?",
+    "cta1": "Share notes",
+    "cta2": "View my schedule",
+    "cta3": "Join a group",
+    "cta4": "Explore events",
+    "featuresTitle": "Built for every part of your academic life",
+    "f1title": "Productivity",
+    "f1desc": "Organize tasks, schedules and weekly goals effortlessly.",
+    "f2title": "Learning",
+    "f2desc": "Access notes and resources shared across the community.",
+    "f3title": "Community",
+    "f3desc": "Connect with students from your major and beyond.",
+    "f4title": "Events",
+    "f4desc": "Never miss a campus activity, fair or conference.",
+    "f5title": "Global resources",
+    "f5desc": "Explore universities worldwide through our built-in API.",
+    "scrollHint": "Scroll to discover more"
+  },
+  "footer": {
+    "tagline": "The academic platform of the future, built for real students.",
+    "rights": "All rights reserved."
+  },
+  "settings": {
+    "theme": "Theme",
+    "font": "Font",
+    "fontsize": "Text size",
+    "language": "Language"
+  }
+}

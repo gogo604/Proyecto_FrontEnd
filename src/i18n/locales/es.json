@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "dashboard": "Dashboard",
+    "community": "Comunidad",
+    "library": "Biblioteca",
+    "events": "Eventos",
+    "gallery": "Galería",
+    "map": "Mapa",
+    "api": "API",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "home": {
+    "eyebrow": "El futuro académico comienza aquí",
+    "title1": "Todo tu campus,",
+    "title2": "en un solo universo.",
+    "subtitle": "Rumabi Study conecta apuntes, grupos de estudio, eventos y horarios en una plataforma inteligente pensada para estudiantes universitarios.",
+    "searchPlaceholder": "¿Qué quieres organizar hoy?",
+    "cta1": "Compartir apuntes",
+    "cta2": "Ver mi horario",
+    "cta3": "Unirme a un grupo",
+    "cta4": "Explorar eventos",
+    "featuresTitle": "Diseñado para cada parte de tu vida académica",
+    "f1title": "Productividad",
+    "f1desc": "Organiza tareas, horarios y metas semanales sin esfuerzo.",
+    "f2title": "Aprendizaje",
+    "f2desc": "Accede a apuntes y recursos compartidos por toda la comunidad.",
+    "f3title": "Comunidad",
+    "f3desc": "Conecta con estudiantes de tu carrera y de otras facultades.",
+    "f4title": "Eventos",
+    "f4desc": "No te pierdas ninguna actividad, feria o conferencia del campus.",
+    "f5title": "Recursos globales",
+    "f5desc": "Explora universidades del mundo mediante nuestra API integrada.",
+    "scrollHint": "Desliza para descubrir más"
+  },
+  "footer": {
+    "tagline": "La plataforma académica del futuro, hecha para estudiantes reales.",
+    "rights": "Todos los derechos reservados."
+  },
+  "settings": {
+    "theme": "Tema",
+    "font": "Tipografía",
+    "fontsize": "Tamaño de texto",
+    "language": "Idioma"
+  }
+}

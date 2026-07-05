@@ -1,0 +1,11 @@
+.api-card { display: flex; flex-direction: column; gap: 0.5rem; }
+.api-card-icon { font-size: 1.5rem; }
+.api-card h3 { font-size: calc(0.98rem * var(--font-scale)); line-height: 1.35; }
+.api-country { font-size: calc(0.8rem * var(--font-scale)); color: var(--text-mid); }
+.api-link {
+  font-size: calc(0.8rem * var(--font-scale));
+  color: var(--secondary);
+  margin-top: 0.35rem;
+  word-break: break-all;
+}
+.api-link:hover { text-decoration: underline; }

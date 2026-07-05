@@ -1,0 +1,55 @@
+.login-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 250;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.login-modal {
+  width: min(400px, 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  animation: fadeInUp 0.3s ease;
+}
+
+.login-modal h3 { font-size: calc(1.2rem * var(--font-scale)); }
+.login-subtitle {
+  font-size: calc(0.82rem * var(--font-scale));
+  color: var(--text-low);
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.login-option {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.03);
+  text-align: left;
+  transition: all 0.2s ease;
+}
+.login-option:hover {
+  border-color: rgba(var(--secondary-rgb), 0.6);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+}
+.login-icon { font-size: 1.4rem; }
+.login-option strong { display: block; font-size: calc(0.92rem * var(--font-scale)); color: var(--text-high); }
+.login-option small { display: block; font-size: calc(0.76rem * var(--font-scale)); color: var(--text-low); margin-top: 0.15rem; }
+
+.login-cancel {
+  margin-top: 0.4rem;
+  font-size: calc(0.85rem * var(--font-scale));
+  color: var(--text-low);
+  align-self: center;
+}
+.login-cancel:hover { color: var(--text-high); }

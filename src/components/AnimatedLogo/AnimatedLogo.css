@@ -1,0 +1,64 @@
+.logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  cursor: pointer;
+}
+
+.logo-orb {
+  position: relative;
+  width: var(--logo-size, 44px);
+  height: var(--logo-size, 44px);
+  filter: drop-shadow(0 0 6px rgba(var(--primary-rgb), 0.55));
+  animation: logoBreathe 4s ease-in-out infinite;
+}
+
+@keyframes logoBreathe {
+  0%   { filter: drop-shadow(0 0 4px rgba(var(--primary-rgb), 0.35)); }
+  50%  { filter: drop-shadow(0 0 14px rgba(var(--secondary-rgb), 0.85)); }
+  100% { filter: drop-shadow(0 0 4px rgba(var(--primary-rgb), 0.35)); }
+}
+
+.logo-svg { width: 100%; height: 100%; overflow: visible; }
+
+.logo-ring {
+  fill: none;
+  stroke: rgba(var(--secondary-rgb), 0.35);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 6;
+}
+
+.logo-core {
+  transform-origin: 50px 50px;
+  animation: logoRotate 20s linear infinite;
+}
+
+@keyframes logoRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.logo-particle { filter: drop-shadow(0 0 3px currentColor); }
+
+.logo-r {
+  transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
+  transform-origin: 50px 50px;
+}
+
+.logo-wrap:hover .logo-r { transform: scale(1.08); }
+.logo-wrap:hover .logo-core { animation-duration: 4s; }
+.logo-wrap:hover .logo-orb { filter: drop-shadow(0 0 20px rgba(var(--secondary-rgb), 1)); }
+
+.logo-word {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-size: calc(1.05rem * var(--font-scale));
+  color: var(--text-high);
+  white-space: nowrap;
+}
+.logo-word-accent { color: var(--secondary); }
+
+@media (max-width: 560px) {
+  .logo-word { display: none; }
+}

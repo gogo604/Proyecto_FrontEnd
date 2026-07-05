@@ -1,0 +1,18 @@
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 980px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .gallery-grid { grid-template-columns: 1fr; } }
+
+.gallery-note {
+  margin-top: 2rem;
+  font-size: calc(0.78rem * var(--font-scale));
+  color: var(--text-low);
+}
+.gallery-note code {
+  background: rgba(255,255,255,0.06);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}

@@ -1,0 +1,75 @@
+/* ==========================================================================
+   RUMABI STUDY — Sistema de temas
+   Cada tema define el mismo conjunto de variables, así todo el resto del
+   CSS puede quedarse "ciego" al tema activo.
+   ========================================================================== */
+
+:root {
+  /* tema por defecto: Nebula */
+  --bg: #050816;
+  --bg-elevated: #0b0f24;
+  --primary: #7b61ff;
+  --secondary: #00d4ff;
+  --accent-detail: #ffffff;
+  --primary-rgb: 123, 97, 255;
+  --secondary-rgb: 0, 212, 255;
+
+  --text-high: #f4f2ff;
+  --text-mid: #b7b3d6;
+  --text-low: #6f6a92;
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-ui: 'Inter', sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  --font-scale: 1;
+}
+
+[data-theme='nebula'] {
+  --bg: #050816;
+  --bg-elevated: #0b0f24;
+  --primary: #7b61ff;
+  --secondary: #00d4ff;
+  --accent-detail: #ffffff;
+  --primary-rgb: 123, 97, 255;
+  --secondary-rgb: 0, 212, 255;
+}
+
+[data-theme='emerald'] {
+  --bg: #041a12;
+  --bg-elevated: #06261a;
+  --primary: #00ffb2;
+  --secondary: #008f6a;
+  --accent-detail: #ffffff;
+  --primary-rgb: 0, 255, 178;
+  --secondary-rgb: 0, 143, 106;
+}
+
+[data-theme='solar'] {
+  --bg: #1a0a00;
+  --bg-elevated: #241206;
+  --primary: #ff8a00;
+  --secondary: #ff3d00;
+  --accent-detail: #ffffff;
+  --primary-rgb: 255, 138, 0;
+  --secondary-rgb: 255, 61, 0;
+}
+
+/* Tipografías intercambiables ------------------------------------------- */
+[data-font='orbitron'] { --font-display: 'Orbitron', sans-serif; }
+[data-font='poppins']  { --font-display: 'Poppins', sans-serif; }
+[data-font='inter']    { --font-display: 'Inter', sans-serif; }
+
+/* Escala de tamaño de fuente --------------------------------------------- */
+[data-fontsize='sm']  { --font-scale: 0.85; }
+[data-fontsize='md']  { --font-scale: 1; }
+[data-fontsize='lg']  { --font-scale: 1.15; }
+[data-fontsize='xl']  { --font-scale: 1.3; }
+[data-fontsize='xxl'] { --font-scale: 1.45; }

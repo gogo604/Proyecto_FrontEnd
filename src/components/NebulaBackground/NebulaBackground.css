@@ -1,0 +1,68 @@
+.nebula-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--bg) 0%, var(--bg-elevated) 45%, var(--bg) 100%);
+  background-size: 200% 200%;
+  animation: nebulaShift 60s ease-in-out infinite;
+}
+
+@keyframes nebulaShift {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.nebula-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nebula-lines { position: absolute; inset: 0; opacity: 0.25; }
+
+.hline {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+  animation: hlineMove 14s linear infinite;
+}
+.hline-1 { top: 18%; animation-duration: 22s; }
+.hline-2 { top: 52%; animation-duration: 30s; animation-direction: reverse; }
+.hline-3 { top: 82%; animation-duration: 26s; }
+
+@keyframes hlineMove {
+  0%   { transform: translateX(-8%); opacity: 0.1; }
+  50%  { opacity: 0.5; }
+  100% { transform: translateX(8%); opacity: 0.1; }
+}
+
+.nebula-glow {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+}
+.glow-a {
+  top: -10%;
+  left: -10%;
+  background: var(--primary);
+  animation: floatGlow 18s ease-in-out infinite;
+}
+.glow-b {
+  bottom: -15%;
+  right: -10%;
+  background: var(--secondary);
+  animation: floatGlow 22s ease-in-out infinite reverse;
+}
+
+@keyframes floatGlow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(6%, 8%) scale(1.15); }
+}
